@@ -282,7 +282,7 @@
 			//39 01 00 00 00 00 03 51 0F FF //cabc 12bits
 			//39 01 00 00 00 00 02 53 2c //cabc
 			//39 01 00 00 00 00 02 55 02 //cabc
-			05 01 00 00 78 00 02 11 00
+			05 01 00 00 96 00 02 11 00
 			05 01 00 00 00 00 02 29 00];
 		qcom,mdss-dsi-off-command = [/*39 01 00 00 00 00 03 51 00 00 cabc*/
 					05 01 00 00 32 00 02 28 00
@@ -323,7 +323,7 @@
 		qcom,mdss-pan-physical-height-dimension = <124>;
 //hebiao@wind-mobi.com 20171201 physical size end
 		qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_wled";
-		qcom,mdss-dsi-reset-sequence = <1 1>, <0 10>, <1 20>;
+		qcom,mdss-dsi-reset-sequence = <1 20>, <0 20>, <1 120>;
 	};
 };
 //hebiao@wind-mobi.com 20170824 end

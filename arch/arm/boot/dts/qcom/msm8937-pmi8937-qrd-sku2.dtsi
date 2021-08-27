@@ -174,9 +174,8 @@
 	qcom,bad-battery-detection-enable;
 	qcom,hold-soc-while-full;
 };
-/**********zhenglihong@wind-mobi.com 20171017 begin************/
-/***&flash_led {
+
+&flash_led {
 	/delete-node/ qcom,flash_1;
 	/delete-node/ qcom,torch_1;
-};****/
-/**********zhenglihong@wind-mobi.com 20171017 end************/
+};
