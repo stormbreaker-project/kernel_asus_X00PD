@@ -1,0 +1,6 @@
+#include "X00P-msm8937.dtsi"
+#include "X00P-msm8937-audio.dtsi"
+#include "X00P-msm8937-pinctrl.dtsi"
+#include "X00P-msm8937-mtp.dtsi"
+#include "X00P-msm8937-mdss.dtsi"
+#include "X00P-camera.dtsi"

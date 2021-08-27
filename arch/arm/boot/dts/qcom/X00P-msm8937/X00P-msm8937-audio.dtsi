@@ -11,8 +11,6 @@
  * GNU General Public License for more details.
  */
 
-/* msm8937-audio */
-
 &int_codec {
 	qcom,msm-mbhc-hphl-swh = <1>;
 	qcom,msm-hs-micbias-type = "internal";

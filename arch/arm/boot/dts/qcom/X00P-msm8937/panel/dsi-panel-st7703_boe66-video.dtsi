@@ -29,8 +29,8 @@
  *---------------------------------------------------------------------------*/
 
 &mdss_mdp {
-	dsi_jdf_lianovation_st7703_720p_video: qcom,dsi_jdf_lianovation_st7703_720p_video {
-		qcom,mdss-dsi-panel-name = "jdf_lianovation_st7703_720p_video";
+	dsi_boe66_st7703_720p_video: qcom,dsi_boe66_st7703_720p_video {
+		qcom,mdss-dsi-panel-name = "dsi_boe66_st7703_720p_video";
 		qcom,mdss-dsi-panel-controller = <&mdss_dsi0>;
 		qcom,mdss-dsi-panel-type = "dsi_video_mode";
 		qcom,mdss-dsi-panel-destination = "display_1"; //
@@ -55,17 +55,17 @@
 		qcom,mdss-dsi-underflow-color = <0xff>; //
 		qcom,mdss-dsi-border-color = <0>; //
 		qcom,mdss-dsi-on-command = [39 01 00 00 00 00 04 B9 F1 12 83 
-			39 01 00 00 00 00 1c BA 33 81 05 F9 0e 0e 20 00 00 00 00 00 00 00 44 25 00 91 0a 00 00 02 4F 01 03 02 37 
+			39 01 00 00 00 00 1c BA 33 83 05 F9 0e 0e 20 00 00 00 00 00 00 00 44 25 00 91 0a 00 00 02 4F 01 03 02 37 
 			39 01 00 00 00 00 05 B8 76 22 20 03 
 			39 01 00 00 00 00 0b B3 0C 10 05 05 03 FF 00 00 00 00 
-			39 01 00 00 00 00 0a C0 73 73 50 50 00 00 08 70 00 
+			39 01 00 00 00 00 0a C0 73 73 50 50 C0 C0 08 70 00 
 			39 01 00 00 00 00 02 BC 4F 
 			39 01 00 00 00 00 02 CC 0B 
 			39 01 00 00 00 00 02 B4 80 
 			39 01 00 00 00 00 04 B2 F0 12 F0 //30->F0
-			39 01 00 00 00 00 0f E3 07 07 0B 0B 03 0B 00 00 00 00 FF 00 C0 17 
+			39 01 00 00 00 00 0f E3 07 07 0B 0B 10 10 00 00 00 00 FF 00 C0 17 
 			39 01 00 00 00 00 0d C1 53 C0 2A 2A 77 F1 FF FF EE EE EE EE 
-			39 01 00 00 00 00 06 C6 26 40 CF FF 00//Harvey_luo@forcelead.com.tw 180806
+			39 01 00 00 00 00 06 C6 16 40 CF FF 00//Harvey_luo@forcelead.com.tw 180807
 			39 01 00 00 00 00 03 B5 19 19 
 			39 01 00 00 00 00 03 B6 3B 3B 
 			39 01 00 00 00 00 04 BF 02 11 00 
@@ -100,21 +100,28 @@
 		qcom,mdss-dsi-t-clk-pre = <0x1B>;
 		qcom,mdss-dsi-bl-min-level = <1>;
 		qcom,mdss-dsi-bl-max-level = <4095>;
+		//harvey_luo@forcelead.com.tw 20180308 add for esd begin 
 		qcom,esd-check-enabled;
 		//qcom,mdss-dsi-hfp-power-mode;
 		//qcom,mdss-dsi-hbp-power-mode;
 		//qcom,mdss-dsi-hsa-power-mode;
-		qcom,mdss-dsi-panel-status-command = [06 01 00 01 05 00 01 09
-		14 01 00 01 05 00 01 68
-		14 01 00 01 05 00 01 AF];
+		qcom,mdss-dsi-panel-status-command = [14 01 00 01 05 00 01 68
+		06 01 00 01 05 00 01 09
+		14 01 00 01 05 00 01 CC
+		14 01 00 01 05 00 01 AF
+		];
 		qcom,mdss-dsi-panel-status-command-state = "dsi_lp_mode";
 		qcom,mdss-dsi-panel-status-check-mode = "reg_read";
-		qcom,mdss-dsi-panel-status-read-length = <3 1 1>;
+		qcom,mdss-dsi-panel-status-read-length = <1 3 1 1>;
 		qcom,mdss-dsi-panel-max-error-count = <2>;
-		qcom,mdss-dsi-panel-status-value = <0x80 0x73 0x04> , <0xC0>, <0xFD>;	
+		qcom,mdss-dsi-panel-status-value = <0xC0> , <0x80 0x73 0x04>, <0x0B>,<0xFD>;	
+		//harvey_luo@forcelead.com.tw 20180308 add for esd end
 		qcom,mdss-dsi-dma-trigger = "trigger_sw";
 		qcom,mdss-dsi-mdp-trigger = "none";
 		qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_wled";
 		qcom,mdss-dsi-reset-sequence = <1 20>, <0 10>, <1 20>;
+
+		wind,mdss-dsi-power-on-sequence-type = <1>;
+
 	};
 };

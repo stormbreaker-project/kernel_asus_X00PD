@@ -1,5 +1,3 @@
-
-//hebiao@wind-mobi.com 20170824 begin
 /*
  * Copyright (c) 2014-2015, The Linux Foundation. All rights reserved.
  *
@@ -29,6 +27,7 @@
  * Update input XML file to add a new entry or update variable in this file
  * VERSION = "1.0"
  *---------------------------------------------------------------------------*/
+
 &mdss_mdp {
 	dsi_cpt_ili9881_720p_video: qcom,dsi_cpt_ili9881_720p_video {
 		qcom,mdss-dsi-panel-name = "ili9881 720p video mode dsi panel";
@@ -274,4 +273,3 @@
 		qcom,mdss-dsi-reset-sequence = <1 20>, <0 20>, <1 120>;
 	};
 };
-//hebiao@wind-mobi.com 20170824 end

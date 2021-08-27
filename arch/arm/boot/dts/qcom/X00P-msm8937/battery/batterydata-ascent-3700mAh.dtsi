@@ -1,10 +1,10 @@
 qcom,ascent-3700mah {
 	qcom,max-voltage-uv = <4350000>;
-	qcom,v-cutoff-uv = <3400000>;                     //liulinsheng@wind-mobi.com 
+	qcom,v-cutoff-uv = <3400000>;
 	qcom,nom-batt-capacity-mah = <4000>;
 	qcom,batt-id-kohm = <100>;
 	qcom,battery-beta = <3435>;
-	qcom,thermal-coefficients=[C8 86 C1 50 D3 37];    /*lvwenkang@wind-mobi.com */
+	qcom,thermal-coefficients=[C8 86 C1 50 D3 37];
 	qcom,battery-type = "ascent_3700mah";
 	qcom,chg-rslow-comp-c1 = <2951136>;
 	qcom,chg-rslow-comp-c2 = <3788851>;
