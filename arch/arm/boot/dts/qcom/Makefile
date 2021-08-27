@@ -1,5 +1,5 @@
 ifeq ($(CONFIG_MACH_ASUS_MSM8937),y)
-dtb-$(CONFIG_MACH_ASUS_X00P) += msm8917-pmi8940-mtp.dtb \
+dtb-$(CONFIG_MACH_ASUS_X00P) += \
 	msm8937-pmi8940-X00P.dtb
 else
 dtb-$(CONFIG_ARCH_MSM8996) += msm8996-v2-pmi8994-mtp.dtb \
