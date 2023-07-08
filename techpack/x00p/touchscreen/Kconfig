@@ -1,0 +1,8 @@
+menu "Touchscreen"
+	depends on INPUT_TOUCHSCREEN
+
+source "techpack/x00p/touchscreen/HX852xES/Kconfig"
+source "techpack/x00p/touchscreen/ft5346i/Kconfig"
+source "techpack/x00p/touchscreen/gt917d/Kconfig"
+
+endmenu

@@ -1,0 +1,8 @@
+menu "Fingerprint"
+
+source "techpack/x00p/fingerprint/fc8350/Kconfig"
+source "techpack/x00p/fingerprint/leadcore/Kconfig"
+source "techpack/x00p/fingerprint/microarray/Kconfig"
+source "techpack/x00p/fingerprint/sunwave/Kconfig"
+
+endmenu
