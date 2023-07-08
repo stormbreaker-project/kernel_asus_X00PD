@@ -7,4 +7,6 @@ config MACH_ASUS_X00P
 	help
 	  Support for Asus X00P
 
+source "techpack/x00p/touchscreen/Kconfig"
+
 endmenu

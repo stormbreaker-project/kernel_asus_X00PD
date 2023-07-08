@@ -1,0 +1,6 @@
+menu "Touchscreen"
+	depends on INPUT_TOUCHSCREEN
+
+source "techpack/x00p/touchscreen/HX852xES/Kconfig"
+
+endmenu
