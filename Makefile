@@ -1,5 +1,6 @@
 ifeq ($(CONFIG_MACH_ASUS_X00P),y)
 
+obj-y += fingerprint/
 obj-$(CONFIG_INPUT_TOUCHSCREEN) += touchscreen/
 
 else
