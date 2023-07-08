@@ -1,5 +1,6 @@
 menu "Fingerprint"
 
 source "techpack/x00p/fingerprint/leadcore/Kconfig"
+source "techpack/x00p/fingerprint/microarray/Kconfig"
 
 endmenu
