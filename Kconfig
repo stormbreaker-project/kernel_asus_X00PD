@@ -1,0 +1,10 @@
+menu "Asus X00P platform"
+	depends on ARCH_MSM8937
+
+config MACH_ASUS_X00P
+	bool "Asus X00P"
+	depends on ARCH_MSM8937
+	help
+	  Support for Asus X00P
+
+endmenu
